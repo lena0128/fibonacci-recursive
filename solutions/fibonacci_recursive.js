@@ -8,6 +8,12 @@ function fibonacci(n) {
 
 if (require.main === module) {
   // add your own tests in here
+
+  console.log("Expecting: 4181");
+  console.log(fibonacci(19));
+
+  console.log("");
+  
   console.log("Expecting: 0");
   console.log(fibonacci(0));
 

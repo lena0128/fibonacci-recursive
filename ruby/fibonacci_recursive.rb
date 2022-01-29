@@ -1,5 +1,8 @@
 def fibonacci(n)
-  # type your code in here
+  # base case
+  return n if n < 2
+
+  fibonacci(n-1) + fibonacci(n-2)
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -7,6 +10,9 @@ if __FILE__ == $PROGRAM_NAME
   puts "=>", fibonacci(0)
 
   puts
+
+  puts "Expecting: 13"
+  puts "=>", fibonacci(7)
 
   puts "Expecting: 1"
   puts "=>", fibonacci(2)
